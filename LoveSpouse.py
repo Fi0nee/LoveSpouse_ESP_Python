@@ -49,7 +49,7 @@ HTML_TEMPLATE = """
             width: 5px;
             background: linear-gradient(135deg, #EE82EE, #FF1493);
             transition: transform 0.2s ease;
-            border-radius: 5px; /* Добавляем скругление */
+            border-radius: 5px; 
         }
         .container {
             display: flex;
@@ -62,7 +62,7 @@ HTML_TEMPLATE = """
             backdrop-filter: blur(10px);
         }
         .vertical-slider {
-            width: 80px; /* Сделали слайдер уже */
+            width: 80px; 
             height: 350px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 24px;
