@@ -1,6 +1,5 @@
 #include <NimBLEDevice.h>
 
-// Команды для обработки
 #define MAX_COMMAND 14
 
 static uint16_t companyId = 0xFFF0;
@@ -15,13 +14,13 @@ uint8_t manufacturerDataList[][11] = {
     {MANUFACTURER_DATA_PREFIX, 0xF3, 0x00, 0x00}, // Low 5
     {MANUFACTURER_DATA_PREFIX, 0xE7, 0x00, 0x00}, // Medium
     {MANUFACTURER_DATA_PREFIX, 0xE6, 0x00, 0x00}, // High
-    {MANUFACTURER_DATA_PREFIX, 0xE1, 0x00, 0x00}, // Режим 4
-    {MANUFACTURER_DATA_PREFIX, 0xD0, 0x00, 0x00}, // Режим 5
-    {MANUFACTURER_DATA_PREFIX, 0xD3, 0x00, 0x00}, // Режим 6
-    {MANUFACTURER_DATA_PREFIX, 0xE2, 0x00, 0x00}, // Режим 7
-    {MANUFACTURER_DATA_PREFIX, 0xED, 0x00, 0x00}, // Режим 8
-    {MANUFACTURER_DATA_PREFIX, 0xDC, 0x00, 0x00}, // Режим 9
-    {MANUFACTURER_DATA_PREFIX, 0xE9, 0x00, 0x00}  // Режим 10
+    {MANUFACTURER_DATA_PREFIX, 0xE1, 0x00, 0x00}, // mode 4
+    {MANUFACTURER_DATA_PREFIX, 0xD0, 0x00, 0x00}, // mode 5
+    {MANUFACTURER_DATA_PREFIX, 0xD3, 0x00, 0x00}, // mode 6
+    {MANUFACTURER_DATA_PREFIX, 0xE2, 0x00, 0x00}, // mode 7
+    {MANUFACTURER_DATA_PREFIX, 0xED, 0x00, 0x00}, // mode 8
+    {MANUFACTURER_DATA_PREFIX, 0xDC, 0x00, 0x00}, // mode 9
+    {MANUFACTURER_DATA_PREFIX, 0xE9, 0x00, 0x00}  // mode 10
 };
 
 const char *deviceName = "MuSE_Advertiser";
