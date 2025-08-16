@@ -4,11 +4,10 @@ import threading
 
 app = Flask(__name__)
 
-# Configuring the COM port
-SERIAL_PORT = "COM5" #replace it with the port your ESP is connected to
+# Настройка COM-порта
+SERIAL_PORT = "COM5"
 BAUD_RATE = 115200
 ser = None
-
 
 HTML_TEMPLATE = """
 <!DOCTYPE html>
@@ -49,7 +48,7 @@ HTML_TEMPLATE = """
             width: 5px;
             background: linear-gradient(135deg, #EE82EE, #FF1493);
             transition: transform 0.2s ease;
-            border-radius: 5px; 
+            border-radius: 5px; /* Добавляем скругление */
         }
         .container {
             display: flex;
@@ -62,7 +61,7 @@ HTML_TEMPLATE = """
             backdrop-filter: blur(10px);
         }
         .vertical-slider {
-            width: 80px; 
+            width: 80px; /* Сделали слайдер уже */
             height: 350px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 24px;
