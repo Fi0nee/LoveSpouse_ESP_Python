@@ -1,3 +1,6 @@
+> ⚠️ **Attention:** This project is no longer maintained and is outdated.  
+> The main development is now in the new repository: [LS-Buttplug](https://github.com/Fi0nee/LS-Buttplug)
+
 # LoveSpouse ESP32 Controller
 
 This project is designed to easily control cheap toys that use Muse/LoveSpouse applications via a web interface.
